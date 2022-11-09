@@ -1,25 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
+import { add, divide, multiply, substract } from "./components/calculator";
+import Heading from "./components/Heading";
+import List from "./components/List";
+import pi, { doublePi, triplePi } from "./components/Math";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Heading />
+      <List />
+      <h1> {pi} </h1>;<h2> {doublePi()} </h2>;<h3> {triplePi()} </h3>;
+      <ul>
+        <li> {add(20, 2)} </li>
+        <li> {substract(27, 5)} </li>
+        <li> {multiply(2, 11)} </li>
+        <li> {divide(44, 2)} </li>
+      </ul>
     </div>
   );
-}
+};
 
 export default App;
