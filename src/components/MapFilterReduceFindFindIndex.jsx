@@ -59,6 +59,25 @@
 //   newNumber += currentNumber;
 // });
 
+// Related to real life situation
+
+// const expenses = {
+//   chauffage: 100,
+//   voiture: 70,
+//   internet: 30,
+//   food: 400,
+//   hobbies: 200,
+//   telephone: 30,
+//   mutuelle: 20,
+//   assurance: 30,
+// };
+
+// const total = Object.values(expenses);
+// console.log(total); [100,70,30,400,200,30,20,30]
+
+// total.reduce((acc, expense) => acc + expense); 880
+// total.reduce((acc, expense) => acc + expense, 100); 980
+
 // __________________________________________________________________________________
 
 //Find - find the first item that matches from an array.
