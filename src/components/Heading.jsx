@@ -34,7 +34,7 @@ const Heading = () => {
   currentTime < 12
     ? (customStyle.color = "yellow")
     : currentTime >= 12 && currentTime <= 18
-    ? (customStyle.color = "red")
+    ? (customStyle.color = "orange")
     : (customStyle.color = "blue");
   return (
     <h1 className="heading" style={customStyle}>

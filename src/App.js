@@ -2,6 +2,8 @@ import React from "react";
 import "./App.css";
 import { add, divide, multiply, substract } from "./components/Calculator";
 import Card from "./components/Card";
+import Destructuring from "./components/Destructuring";
+import EventHandling from "./components/EventHandling";
 import Heading from "./components/Heading";
 import List from "./components/List";
 import pi, { doublePi, triplePi } from "./components/Math";
@@ -9,6 +11,7 @@ import pi, { doublePi, triplePi } from "./components/Math";
 const App = () => {
   return (
     <div>
+      {/* _____________________Importing/ Exporting */}
       <Heading />
       <List />
       <h1> {pi} </h1>;<h2> {doublePi()} </h2>;<h3> {triplePi()} </h3>;
@@ -18,6 +21,7 @@ const App = () => {
         <li> {multiply(2, 11)} </li>
         <li> {divide(44, 2)} </li>
       </ul>
+      {/* _____________________props */}
       <Card
         name="Beyonce"
         img="https://blackhistorywall.files.wordpress.com/2010/02/picture-device-independent-bitmap-119.jpg"
@@ -36,6 +40,9 @@ const App = () => {
         phoneNumber="+918 372 574"
         email="gmail@chucknorris.com"
       />
+      {/* _____________________destructuring */}
+      <Destructuring />
+      <EventHandling />
     </div>
   );
 };
