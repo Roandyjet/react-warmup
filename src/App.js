@@ -4,6 +4,7 @@ import { add, divide, multiply, substract } from "./components/Calculator";
 import Card from "./components/Card";
 import Destructuring from "./components/Destructuring";
 import EventHandling from "./components/EventHandling";
+import Forms from "./components/Forms";
 import Heading from "./components/Heading";
 import List from "./components/List";
 import pi, { doublePi, triplePi } from "./components/Math";
@@ -43,6 +44,7 @@ const App = () => {
       {/* _____________________destructuring */}
       <Destructuring />
       <EventHandling />
+      <Forms />
     </div>
   );
 };
